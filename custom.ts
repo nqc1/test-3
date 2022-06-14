@@ -4,12 +4,8 @@
 * Read more at https://makecode.microbit.org/blocks/custom
 */
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
+
+
 
 /**
  * Custom blocks
@@ -23,8 +19,10 @@ namespace custom {
      * @param e describe parameter here
      */
     //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
+    export function Test(n: number, s: string, e: Gesture): void {
+        if (e === Gesture.Shake){
+            music.playTone(262, music.beat(BeatFraction.Whole))
+        }
     }
 
     /**
