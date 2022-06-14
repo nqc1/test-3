@@ -48,6 +48,13 @@ namespace custom {
     //% word.fieldOptions.decompileLiterals=true
     //% word.fieldOptions.values='hi,hello'
     export function __wordPicker(word: string): string {
+
         return word;
+    }
+
+    //% block="say $word"
+    //% word.shadow="wordPicker"
+    export function say(word: string) {
+
     }
 }
