@@ -35,4 +35,19 @@ namespace custom {
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value -1) + fib(value - 2);
     }
+
+
+    /**
+  * Get the word field editor
+  * @param word eg: Hello
+  */
+    //% blockId=wordPicker block="$word"
+    //% blockHidden=true
+    //% colorSecondary="#FFFFFF"
+    //% word.fieldEditor="textdropdown"
+    //% word.fieldOptions.decompileLiterals=true
+    //% word.fieldOptions.values='hi,hello'
+    export function __wordPicker(word: string): string {
+        return word;
+    }
 }
