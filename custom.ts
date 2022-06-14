@@ -32,9 +32,9 @@ namespace custom {
      * @param value describe value here, eg: 5
      */
     //% block
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
-    }
+  //  export function fib(value: number): number {
+ //       return value <= 1 ? value : fib(value -1) + fib(value - 2);
+  //  }
 
 
     /**
@@ -47,14 +47,14 @@ namespace custom {
     //% word.fieldEditor="textdropdown"
     //% word.fieldOptions.decompileLiterals=true
     //% word.fieldOptions.values='hi,hello'
-    export function __wordPicker(word: string): string {
-
-        return word;
-    }
+   // export function __wordPicker(word: string): string {
+//
+  //      return word;
+   // }
 
     //% block="say $word"
     //% word.shadow="wordPicker"
-    export function say(word: string) {
-
-    }
+   // export function say(word: string) {
+//
+  //  }
 }
