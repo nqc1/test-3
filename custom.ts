@@ -19,9 +19,11 @@ namespace custom {
      * @param e describe parameter here
      */
     //% block
-    export function Test(n: number, s: string, e: Gesture): void {
+    export function Test(e: Gesture): void {
         if (e === Gesture.Shake){
-            music.playTone(262, music.beat(BeatFraction.Whole))
+            music.playMelody("C5 C C5 C B D A F ", 120)
+        } if(e === Gesture.FreeFall){
+            music.playMelody("C5 A B G A F G E ", 120)
         }
     }
 
