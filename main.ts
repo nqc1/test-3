@@ -1,3 +1,3 @@
 basic.forever(function () {
-    custom.Test(Gesture.Shake)
+    custom.Test(Gesture.FreeFall)
 })
